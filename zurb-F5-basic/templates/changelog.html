@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Todo</h3>
+
+<ul>
+  {% for tag, articles in tags if tag.name == 'todo' %}
+  {% for article in articles|sort(reverse=True, attribute='date') %}
+  <li> <a href='{{ article.url }}'>{{ article.title }}</a>
+  {{ article.summary }}
+  {% endfor %}
+  {% endfor %}
+</ul>
+
+<h3>Changelog</h3>
+<ul>
+  {% for tag, articles in tags if tag.name == 'change-log' %}
+  {% for article in articles|sort(reverse=True, attribute='date') %}
+  <li>{{ article.locale_date }}</li>
+  <a href='{{ article.url }}'>{{ article.title }}</a>
+  {{ article.summary }}
+  {% endfor %}
+  {% endfor %}
+</ul>
+
+{% endblock %}

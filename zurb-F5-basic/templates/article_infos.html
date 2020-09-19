@@ -1,4 +1,6 @@
 <h6 class="subheader" title="{{ article.date.isoformat() }}">{{ article.locale_date }}
+  <br>
+  Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
     {# {% if article.author %}
     By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     {% endif %} #}

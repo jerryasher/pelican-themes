@@ -11,12 +11,17 @@ article { padding-left:1em; }
 /* Base.html - top navigation */
 .top-bar {
 /* 2BA6E3 #2B0034 */
-background: #2B0034; /* Header color */
+ background: #2B0034;  /* Header color */
+/*  background: #222; */ /* Header color */
 height: 100%; 
 margin-bottom: 1em; 
+color: #fff; 
 }
 
 .top-bar a { color: #fff } /* Sitename color */
+.top-bar h1 { color: #fff } /* Sitename color */
+.top-bar h2 { color: #fff } /* Sitename color */
+.top-bar h3 { color: #fff } /* Sitename color */
 ul.button-group.navigation { margin-bottom: 1em; }
 
 
@@ -66,8 +71,8 @@ hr.gradient {
 	white-space: pre;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+	/* border: 1px solid #ccc; */
+	/* border-radius: 5px; */
 	background: #e0e0e0;
 	padding: 1em;
 	overflow: auto;

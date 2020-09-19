@@ -1,0 +1,17 @@
+<ul>
+  {% if article.next_article %}
+  <li class="fa fa-arrow-right">
+    <a title="next" href="{{ SITEURL }}/{{ article.next_article.url}}">
+      {{ article.next_article.title }}
+    </a>
+  </li>
+  {% endif %}
+  <br>
+  {% if article.prev_article %}
+  <li class="fa fa-arrow-left">
+    <a title="previous" href="{{ SITEURL }}/{{ article.prev_article.url}}">
+    {{ article.prev_article.title }}
+    </a>
+  </li>
+  {% endif %}
+</ul>
